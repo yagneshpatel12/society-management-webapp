@@ -95,7 +95,7 @@ Installing dependencies
 Add proxy in package.json (client side)
 
 ```bash
-"proxy":"http://localhost:5501"
+"proxy":"http://localhost:5501",
 ```
 
 Run locally client

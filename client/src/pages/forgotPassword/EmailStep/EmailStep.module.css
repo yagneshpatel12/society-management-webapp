@@ -1,0 +1,47 @@
+.emailStep {
+  width: 400px;
+  max-width: 98%;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.emailStep h3 {
+  font-weight: 500;
+}
+.emailStep h3 i {
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+.emailStep form {
+  margin: 20px auto;
+  text-align: start;
+}
+.emailStep form {
+  width: 80%;
+}
+.emailStep form input {
+  width: 100%;
+}
+.nextBtn {
+  padding: 12px 0px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+.nextBtn span {
+  font-weight: 600;
+}
+.nextBtn img {
+  width: 15px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .emailStep form {
+    width: 90%;
+  }
+}

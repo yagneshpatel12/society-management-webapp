@@ -1,0 +1,239 @@
+.stickyNav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.menuActive {
+  color: var(--main-color) !important;
+}
+.menuActive li {
+  color: var(--main-color) !important;
+}
+.navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0px;
+}
+
+.rightSide {
+  display: flex;
+}
+.rightSide ul {
+  display: flex;
+  align-items: center;
+}
+.rightSide ul a li {
+  color: var(--primary-text);
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+.rightSide ul a {
+  margin: 0px 28px;
+  font-size: 15px;
+}
+.rightSide ul a:last-child {
+  margin-right: 0px;
+}
+.rightSide ul a li:hover {
+  color: var(--main-color);
+}
+.buttonWrapper {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.btn {
+  font-size: 16px;
+  padding: 7px 30px;
+  font-weight: bold;
+  border: 2px solid var(--main-color);
+  color: var(--white);
+  background: var(--main-color);
+}
+.btn:hover {
+  background: none;
+  color: var(--main-color) !important;
+}
+.rightSide input[type="checkbox"] {
+  display: none;
+}
+.rightSide input:checked + .imgMenu span {
+  transform: rotate(180deg);
+}
+.rightSide input:checked + .imgMenu .hoverMenu {
+  display: block;
+}
+.hoverMenu {
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  background: var(--white);
+  top: 60px;
+  right: 0px;
+  padding: 10px 20px;
+  transition: all 1s;
+  border: 1px solid rgb(241, 241, 241);
+}
+.profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.imgMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.imgMenu span {
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+.sMenu {
+  display: flex;
+  margin: 20px 5px;
+}
+.sMenu p i {
+  margin-right: 15px;
+  font-size: 16px;
+}
+.sMenu p {
+  font-weight: 500;
+  width: 180px;
+  font-size: 16px;
+}
+.sMenu p a {
+  width: 180px;
+  color: var(--primary-text);
+}
+.sMenu p a:hover {
+  color: var(--main-color);
+}
+.rightSide ul a li i {
+  display: none;
+}
+@media only screen and (max-width: 1030px) {
+  .rightSide ul a {
+    margin: 0px 20px !important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .mobileImg {
+    width: 98%;
+    padding: 10px 20px;
+    padding-top: 0px;
+    margin-left: 20px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px !important;
+  }
+  .mobileImg h3 {
+    font-weight: 600;
+    margin-left: 30px;
+  }
+  .mobileImg img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .menuActive {
+    background: var(--main-color);
+    border-radius: 7px;
+  }
+  .menuActive li {
+    color: var(--white) !important;
+  }
+  .navbarWrapper {
+    padding: 19px 0px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .rightSide ul a li,
+  .btn {
+    font-size: 16px;
+  }
+  .rightSide {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: calc(100vh - 50px);
+    clip-path: circle(50px at calc(100% - 70px) -80px);
+    transition: all 0.3s ease-in-out;
+    background: none;
+    z-index: 1;
+    flex-direction: column;
+    text-align: center;
+    overflow: scroll;
+    height: 100vh;
+    background: rgba(68, 68, 68, 0.548);
+  }
+  .clipPath {
+    clip-path: circle(100%);
+  }
+  .rightSide ul {
+    background: var(--white);
+    padding-top: 7px !important;
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px !important;
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+    box-shadow: 0px -2px 30px rgb(160, 160, 160);
+    padding-bottom: 25px !important;
+  }
+  .rightSide ul a li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .rightSide ul a li i {
+    margin-right: 20px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+  }
+  .rightSide ul a {
+    width: 95%;
+    padding: 12px 0px;
+    margin: 2px 0px;
+    text-align: start;
+    padding-left: 20px;
+  }
+  .hoverMenu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbarWrapper {
+    padding: 15px 0px;
+  }
+  .rightSide ul li a {
+    font-size: 14px;
+  }
+  .mobileImg {
+    padding-top: 0px !important;
+  }
+  .mobileImg img {
+    width: 60px;
+    height: 60px;
+  }
+}

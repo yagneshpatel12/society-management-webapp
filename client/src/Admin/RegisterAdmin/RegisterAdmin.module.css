@@ -1,0 +1,70 @@
+.registerAdmin form {
+  width: 450px;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.registerAdmin form div input,
+.registerAdmin form div label {
+  width: 100%;
+  display: inline-block;
+}
+.registerAdmin form div {
+  width: 90%;
+  margin: auto;
+}
+.registerAdmin form div label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.nextBtn {
+  padding: 12px 0;
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 30px;
+}
+.nextBtn i {
+  margin-left: 7px;
+}
+
+/* password show and hide */
+.registerAdmin form div span {
+  position: relative;
+  top: -31px;
+  right: 5px;
+  display: inline-block;
+  float: right;
+}
+.registerAdmin form div span i {
+  color: rgb(194 194 197);
+  font-size: 14px;
+  cursor: pointer;
+}
+/* profile img */
+.registerAdmin .profileImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.registerAdmin .profileImg .imgDiv {
+  border: 2px solid var(--main-color);
+  overflow: hidden;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+}
+.registerAdmin .profileImg .imgDiv img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.registerAdmin .profileImg label {
+  width: 70%;
+  color: blue;
+  cursor: pointer;
+}

@@ -1,0 +1,179 @@
+.memberWrapper {
+  padding: 50px 0px;
+  text-align: center;
+  border-bottom: 1px solid var(--input-border);
+}
+.memberWrapper h2 {
+  color: var(--main-color);
+}
+.memberWrapper h2::after {
+  background: var(--secondary-color);
+}
+.memberWrapper p {
+  width: 700px;
+  max-width: 100%;
+  max-width: 90%;
+  margin: 15px auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.memberWrapper button {
+  padding: 12px 0px;
+  width: 200px;
+  font-size: 14px;
+}
+.buttonWrapper h3 {
+  text-align: end;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--main-color);
+  cursor: pointer;
+}
+/* --------form-------- */
+.memberWrapper form {
+  width: 700px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.memberDetails .memberImg .imgDiv img {
+  width: 90px;
+  height: 90px;
+}
+.memberDetails div label,
+.memberWrapper div input {
+  width: 100%;
+  text-align: start;
+}
+.memberImg label {
+  color: blue;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px 0px !important;
+  text-align: center !important;
+}
+.memberDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.memberImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.memberImg img {
+  border-radius: 50%;
+}
+.memberDetails .setWidth {
+  width: 47%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.memberDetails p {
+  margin: 5px 0px;
+}
+.formInputWrapper label {
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+.formInputWrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.lastInput {
+  width: 100%;
+  text-align: start;
+}
+.cancel {
+  text-align: end;
+  margin-top: -10px;
+  margin-right: -10px;
+  float: right !important;
+  width: 100%;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 22px;
+}
+@media only screen and (max-width: 600px) {
+  .formInputWrapper {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .formInputWrapper {
+    width: 95%;
+  }
+  .memberDetails .setWidth {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .lastInput {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+.memberTable {
+  width: 700px;
+  max-width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 7px;
+  padding: 18px;
+}
+.memberTable img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.memberTable table {
+  width: 100%;
+}
+.memberTable tr,
+.memberTable th {
+  padding: 20px;
+  color: var(--primary-text);
+}
+.r1 {
+  width: 40px;
+  min-width: 20px;
+}
+.r2 {
+  width: 70px;
+}
+.r3 {
+  width: 150px;
+  min-width: 120px;
+}
+.r4 {
+  width: 100px;
+}
+.r5 {
+  width: 120px;
+}
+.r6 {
+  width: 60px;
+}
+.r7 {
+  width: 30px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  .memberTable {
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,128 @@
+.eventsWrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .eventsWrapper {
+    height: 82vh;
+  }
+}
+.addEventBtn {
+  padding: 10px 0px;
+  width: 300px;
+  max-width: 70%;
+  font-size: 16px;
+  margin: auto;
+  margin-bottom: 12px;
+}
+.eventCardWrapper {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  width: 90%;
+}
+.eventsWrapper form {
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+}
+.mainInputWrapper div {
+  width: 45%;
+  margin: 5px auto;
+}
+.mainInputWrapper {
+  width: 90% !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fullWidthInput {
+  width: 85% !important;
+  margin: 5px 10px;
+}
+.eventsWrapper form label,
+.eventsWrapper form input,
+.eventsWrapper form textarea {
+  width: 100% !important;
+}
+.link {
+  color: blue;
+  cursor: pointer;
+}
+.eventsWrapper form label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+.imgDiv img {
+  height: 100%;
+  object-fit: cover;
+}
+.eventsWrapper form button {
+  width: 85%;
+  padding: 12px 0;
+  margin: 10px auto;
+}
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px;
+  width: 450px;
+  max-width: 90%;
+}
+.delete {
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--secondary-color);
+  border-radius: 0px 0px 5px 5px;
+  width: 96%;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding: 5px 0;
+}
+@media only screen and (max-width: 500px) {
+  .delete {
+    padding: 5px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .mainInputWrapper div {
+    width: 90% !important;
+  }
+  .fullWidthInput {
+    width: 82% !important;
+  }
+  .link {
+    text-align: center;
+  }
+}

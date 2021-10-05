@@ -1,0 +1,98 @@
+.profileWrapper {
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--input-border);
+  margin-top: -10px;
+}
+.profileWrapper .buttonWrapper {
+  text-align: end;
+}
+.profileWrapper .buttonWrapper button {
+  padding: 9px 0px;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.profile .img {
+  text-align: center;
+}
+.profile .img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.info {
+  width: 70%;
+}
+.info h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.info p {
+  font-weight: 500;
+  font-size: 14px;
+}
+.info .proffession {
+  color: black;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.info p span {
+  color: var(--main-color);
+  margin-left: 5px;
+}
+.info p span {
+  display: inline;
+}
+
+.info .contact i {
+  margin-right: 10px;
+  color: #ff3d5a;
+}
+.info .contact {
+  color: var(--primary-text);
+  margin: 3px 0px;
+}
+@media only screen and (max-width: 700px) {
+  .profile .img img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .info {
+    margin: auto;
+    width: 80%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .info {
+    width: 100%;
+    margin-top: 2px;
+  }
+  .info h2 {
+    margin-bottom: 4px;
+  }
+  .info .proffession {
+    font-weight: 600;
+  }
+  .profileWrapper .buttonWrapper button {
+    background: none;
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 2px 0px;
+  }
+}

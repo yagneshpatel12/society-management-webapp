@@ -1,0 +1,11 @@
+.eventWrapper {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 90%;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 1000px) {
+  .eventWrapper {
+    margin-top: 80px;
+  }
+}

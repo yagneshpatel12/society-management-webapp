@@ -1,0 +1,126 @@
+.settingWrapper h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.settingWrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .settingWrapper {
+    height: 82vh;
+  }
+}
+.settingWrapper::-webkit-scrollbar {
+  width: 10px;
+}
+.settingWrapper .btn {
+  padding: 11px 0;
+  width: 100%;
+  margin-top: 15px;
+}
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 300px;
+  max-width: 90%;
+  margin-top: 50px;
+  padding: 20px;
+}
+.setting img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+}
+.setting h3 {
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-top: 15px;
+}
+.setting h4 {
+  font-weight: 500;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+.setting p {
+  font-weight: 500;
+  color: var(--primary-text);
+  margin: 3px 0;
+}
+.setting p span {
+  color: var(--main-color);
+}
+.settingWrapper form {
+  width: 620px;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+}
+.settingWrapper form input,
+.settingWrapper form label {
+  width: 100%;
+}
+.settingWrapper form label {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.settingWrapper form div {
+  width: 450px;
+  max-width: 90%;
+}
+.settingWrapper .profile {
+  display: flex;
+  width: 450px;
+  max-width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+.profile label {
+  width: 50% !important;
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+}
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.cancelBtn {
+  width: 49%;
+  padding: 10px 0;
+  background: rgba(161, 161, 161, 0.513);
+  border-radius: 2px;
+  color: var(--primary-text);
+}
+.submitBtn {
+  width: 49%;
+  padding: 10px 0;
+  border-radius: 2px;
+}
+@media only screen and (max-width: 550px) {
+  .setting img {
+    width: 80px;
+    height: 80px;
+  }
+  .settingWrapper::-webkit-scrollbar {
+    width: 3px;
+  }
+}

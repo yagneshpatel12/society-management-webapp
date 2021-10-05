@@ -1,0 +1,127 @@
+.advertiseWrapper {
+  padding: 50px 0px;
+  text-align: center;
+  border-bottom: 1px solid var(--input-border);
+}
+.advertiseWrapper h2 {
+  color: var(--main-color);
+}
+.advertiseWrapper h2::after {
+  background: var(--secondary-color);
+}
+.advertiseWrapper .advertiseDisc {
+  width: 700px;
+  max-width: 100%;
+  margin: 15px auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.advertiseWrapper button {
+  padding: 12px 0px;
+  width: 200px;
+  font-size: 14px;
+}
+.advertiseWrapper form {
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.cancel {
+  text-align: end;
+  margin-top: -10px;
+  margin-right: -10px;
+  float: right !important;
+  width: 100%;
+  cursor: pointer;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.imgDiv,
+.inputDiv {
+  width: 49%;
+}
+.imgDiv {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  background: #ffe7ed;
+  overflow: hidden;
+  justify-content: center;
+}
+.imgDiv p {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.imgDiv img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.inputDiv label {
+  color: blue;
+  cursor: pointer;
+  font-weight: 600;
+}
+.discription {
+  margin-bottom: 15px;
+}
+
+.discription textarea,
+.discription label {
+  width: 80%;
+}
+.discription label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.cardWrapperForDelete {
+  position: relative;
+}
+.cardWrapperForDelete i {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  z-index: 2;
+}
+.cancel {
+  text-align: end;
+  float: right !important;
+  width: 100%;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 22px;
+  margin-top: -30px;
+}
+@media only screen and (max-width: 700px) {
+  .advertiseWrapper form {
+    padding: 10px 7px;
+  }
+  .imgWrapper,
+  .discription textarea,
+  .discription label {
+    width: 95%;
+  }
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: auto;s */
+  margin: 30px auto;
+}
+@media only screen and (max-width: 530px) {
+  .inputDiv {
+    width: 40%;
+  }
+}

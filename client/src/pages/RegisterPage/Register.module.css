@@ -1,0 +1,71 @@
+.registerWrapper {
+  margin-bottom: 20px;
+}
+.registerWrapper h1 {
+  margin-bottom: 20px;
+}
+.progress {
+  width: 600px;
+  max-width: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.text {
+  width: 680px;
+  max-width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.text p {
+  font-weight: 500;
+}
+.text p:first-child {
+  color: var(--main-color) !important;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  background: rgb(236, 236, 236);
+  color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.dot:first-child {
+  background: var(--main-color);
+  color: var(--white);
+}
+.dot:nth-of-type(3) {
+  margin-left: -4px;
+}
+.dot:last-child {
+  margin-left: -5px;
+}
+.line {
+  height: 10px;
+  width: 45%;
+  border-radius: 50px;
+  background-color: rgb(240, 240, 240);
+  margin-left: -4px;
+  z-index: 1;
+  position: relative;
+  transition: all 2s;
+}
+
+@media only screen and (max-width: 500px) {
+  .text {
+    width: 100%;
+  }
+  .text p {
+    text-align: center;
+    width: 80px;
+    font-size: 13px;
+  }
+}

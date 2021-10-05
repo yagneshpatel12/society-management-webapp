@@ -1,0 +1,55 @@
+.memberTable {
+  width: 800px;
+  max-width: 90%;
+  margin: 30px auto;
+  margin-top: 40px;
+}
+.memberTable table {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--primary-text);
+  padding: 20px 10px;
+}
+.memberTable table th {
+  padding: 10px 0px;
+}
+.memberTable table td {
+  padding: 5px 0px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 650px) {
+  .memberTable {
+    overflow-x: scroll;
+  }
+}
+
+.r1 {
+  width: 80px;
+  min-width: 80px;
+}
+.r2 {
+  width: 80px;
+  min-width: 80px;
+}
+.r2 img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.r3 {
+  width: 150px;
+  min-width: 150px;
+}
+.r4 {
+  width: 150px;
+  min-width: 150px;
+}
+.r5 {
+  width: 60px;
+  min-width: 60px;
+  color: blue;
+  cursor: pointer;
+}

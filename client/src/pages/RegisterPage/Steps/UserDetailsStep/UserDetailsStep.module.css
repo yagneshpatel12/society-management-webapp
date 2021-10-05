@@ -1,0 +1,130 @@
+.step3 {
+  width: 50%;
+  padding: 20px 0px;
+  margin: auto;
+}
+.step3 form {
+  width: 100%;
+  margin: auto;
+}
+input[type="file"] {
+  display: none !important;
+}
+.personalDetails {
+  padding: 20px 30px;
+  margin: auto;
+}
+.profileImg {
+  text-align: center;
+}
+.imgDiv {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileImg p {
+  color: var(--primary-text);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.profileImg label {
+  color: blue !important;
+  text-align: center;
+  cursor: pointer;
+}
+.imgDiv img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+.personalDetails label {
+  margin: 5px auto;
+  margin-top: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+.personalDetails input,
+.securityDetails input,
+.personalDetails textarea {
+  width: 100%;
+}
+.setWidth {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.setWidth div {
+  width: 48%;
+}
+.securityDetails label {
+  display: inline-block;
+}
+.securityDetails {
+  margin-top: 20px;
+  padding: 20px 30px;
+}
+.securityDetails p {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+.securityDetails span {
+  position: relative;
+  top: -31px;
+  right: 5px;
+  display: inline-block;
+}
+.securityDetails span i {
+  color: rgb(194 194 197);
+  font-size: 14px;
+  cursor: pointer;
+}
+.securityDetails div {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.registerBtn {
+  margin: 20px auto;
+  padding: 10px 0px;
+  width: 90%;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 940px) {
+  .step3 {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .step3 {
+    width: 98%;
+  }
+  .personalDetails,
+  .securityDetails {
+    padding: 20px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .setWidth {
+    flex-direction: column;
+  }
+  .setWidth div {
+    width: 100%;
+  }
+  .step3 {
+    width: 100%;
+  }
+}

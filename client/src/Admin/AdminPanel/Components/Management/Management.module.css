@@ -1,0 +1,103 @@
+.managementWrapper {
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 500px) {
+  .managementWrapper {
+    height: 82vh;
+  }
+}
+.btn {
+  text-align: center;
+}
+.btn button {
+  padding: 11px 0;
+  width: 250px;
+  max-width: 70%;
+}
+.managementWrapper form {
+  width: 620px;
+  max-width: 79%;
+  margin: 30px auto;
+  padding: 30px;
+}
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+}
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.profile label {
+  width: 50% !important;
+  text-align: center;
+  cursor: pointer;
+  color: blue;
+}
+.managementWrapper form input,
+.managementWrapper form label {
+  width: 100%;
+  display: inline-block;
+}
+.managementWrapper form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.inputWidth {
+  width: 48%;
+}
+.row,
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btns button {
+  width: 48%;
+  padding: 11px 0;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+.cancelBtn {
+  background: rgba(155, 155, 155, 0.452);
+  color: black;
+}
+.cardList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.deleteWrapper {
+  position: relative;
+}
+.deleteWrapper span {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  z-index: 1;
+}
+@media only screen and (max-width: 650px) {
+  .inputWidth {
+    width: 95%;
+    margin: auto;
+  }
+  .btns {
+    width: 95%;
+    margin: auto;
+  }
+  .managementWrapper form {
+    padding: 20px;
+    width: 75%;
+  }
+}

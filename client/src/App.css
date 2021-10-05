@@ -1,0 +1,245 @@
+:root {
+  --main-color: #1069ff;
+  --secondary-color: #ff3d5a;
+  --thirdary-color: #ffd51c;
+  --primary-text: #00011ab9;
+  --secondary-text: #414141;
+  --off-white: #f3effe;
+  --white: #fff;
+  --input-border: #dddddd;
+  --width-first: 0%;
+  --width-second: 0%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #fbfbfb;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+ol,
+ul {
+  list-style: none;
+}
+p {
+  color: var(--primary-text);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover !important;
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* progrsss bar Registration page */
+.line1::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: var(--width-first);
+  height: 10px;
+  transition: all 0.7s;
+  background: var(--main-color);
+}
+.line2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: var(--width-second);
+  height: 10px;
+  transition: all 0.7s;
+  background: var(--main-color);
+}
+input,
+textarea {
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  padding: 8px 0px;
+  text-indent: 15px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 500;
+  background: none;
+  color: var(--primary-text);
+  font-family: "Poppins", sans-serif;
+}
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid var(--main-color);
+  box-shadow: 0px 0px 4px var(--main-color);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::placeholder {
+  color: #a5a5a5;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+label {
+  font-weight: 500;
+  color: var(--primary-text);
+  font-size: 14px;
+  text-align: start;
+}
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.heading {
+  font-weight: 600;
+  color: var(--primary-text);
+  text-align: center;
+  margin-bottom: 50px;
+  text-decoration: none;
+  position: relative;
+}
+.heading::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  bottom: -15px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 13%;
+  background: var(--main-color);
+  border-radius: 100px;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 500px) {
+  .heading {
+    font-size: 25px;
+  }
+  .heading::after {
+    width: 45%;
+  }
+}
+.secondary-heading {
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .secondary-heading {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .secondary-heading {
+    font-size: 20px;
+  }
+}
+.btnStructure {
+  background: var(--main-color);
+  outline: none;
+  border: none;
+  color: var(--white);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  padding: 6px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+}
+.container-margin-top {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 435px) {
+  .container-margin-top {
+    margin-top: 80px;
+  }
+}
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid rgb(238, 238, 238);
+}
+#cursor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  z-index: 101;
+  transition: all 0.2s linear;
+}
+@media only screen and (max-width: 1000px) {
+  #cursor {
+    display: none;
+  }
+}
+/* showpassword and hidepassword classes */
+.images {
+  position: relative;
+  background-color: red;
+}
+#showPassword {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  right: 12px;
+  overflow: hidden;
+  z-index: 10;
+}
+#showPassword span {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 17px;
+  left: -4px;
+  top: 4px;
+  height: 2px;
+  background: #8e8e8e;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 450px) {
+  #showPassword {
+    right: 10px;
+  }
+}
+/* invlalid alert */
+.invalid {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px auto;
+  text-align: center;
+}

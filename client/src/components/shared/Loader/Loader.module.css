@@ -1,0 +1,44 @@
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.loaderCard {
+  width: 500px;
+  max-width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  height: 250px;
+}
+.customLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.message {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--primary-text);
+}
+
+.spinner {
+  margin-bottom: 20px;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

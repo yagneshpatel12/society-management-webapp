@@ -1,0 +1,93 @@
+.contactWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.contactWrapper p {
+  font-weight: 500;
+}
+.contactWrapper form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  border-radius: 15px;
+  padding: 30px 10px;
+  border: 1px solid rgb(238, 238, 238);
+}
+.contactWrapper form input,
+.contactWrapper form textarea {
+  width: 70%;
+  min-width: 90%;
+}
+.contactWrapper form label {
+  width: 70%;
+  min-width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: var(--primary-text);
+  font-weight: 500;
+}
+.contactWrapper form button {
+  width: 30%;
+  min-width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 12px 20px;
+}
+.contactWrapper .rightSide {
+  width: 30%;
+  max-width: 90%;
+}
+.contactLocation,
+.contactEmail {
+  background: var(--light-black);
+  border-radius: 10px;
+  padding: 20px 10px;
+  text-align: center;
+}
+.contactLocation {
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+.contactLocation h3,
+.contactEmail h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contactLocation img {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.contactEmail p i {
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+@media only screen and (max-width: 850px) {
+  .contactWrapper form {
+    width: 80%;
+  }
+  .contactWrapper .rightSide {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contactWrapper form {
+    width: 97%;
+  }
+  .contactWrapper .rightSide {
+    width: 97%;
+  }
+  .contactWrapper form button {
+    width: 93%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contactEmail img {
+    display: none;
+  }
+}

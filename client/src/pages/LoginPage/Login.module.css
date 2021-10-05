@@ -1,0 +1,110 @@
+.loginWrapper {
+  width: 500px;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 5px;
+  margin-bottom: 20px;
+}
+.loginHeading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.loginHeading img {
+  margin-right: 15px;
+}
+.message {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.loginWrapper form {
+  width: 65%;
+}
+.loginWrapper form label {
+  font-weight: 500;
+  color: var(--primary-text);
+  font-size: 14px;
+}
+.loginInput {
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  background: none;
+}
+.loginInput:focus-within {
+  border: 1px solid var(--main-color);
+  box-shadow: 0px 0px 4px var(--main-color);
+}
+.loginInput i {
+  color: rgb(194 194 197);
+  font-size: 14px;
+  cursor: pointer;
+}
+.loginInput input {
+  margin-left: 0px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  font-size: 14px;
+  width: 80%;
+}
+.forgotPassword {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: end;
+  color: var(--primary-text);
+  cursor: pointer;
+}
+.loginBtn {
+  padding: 10px 20px;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.registerLink {
+  font-size: 14px;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.registerLink a {
+  color: blue;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media only screen and (max-width: 550px) {
+  .loginWrapper form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .loginInput {
+    padding: 2px 8px;
+  }
+  .loginWrapper form {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .loginHeading img {
+    width: 20px;
+  }
+}

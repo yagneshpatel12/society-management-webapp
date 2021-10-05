@@ -1,0 +1,44 @@
+.errorWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  margin-top: 160px;
+}
+.errorWrapper h1 {
+  font-weight: bolder;
+  transform: scale(3);
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+.errorWrapper h3 {
+  color: var(--secondary-color);
+  margin-top: 30px;
+  font-weight: 500;
+}
+.errorWrapper p {
+  color: var(--primary-text);
+  font-weight: 500;
+  width: 550px;
+  max-width: 90%;
+  text-align: center;
+  margin: 10px 0;
+}
+.errorWrapper button {
+  padding: 11px 0;
+  width: 150px;
+  max-width: 70%;
+  margin: 10px auto;
+}
+@media only screen and (max-width: 550px) {
+  .errorWrapper h1 {
+    transform: scale(2);
+  }
+  .errorWrapper {
+    margin-top: 100px;
+  }
+  .errorWrapper h3 {
+    margin-top: 15px;
+  }
+}

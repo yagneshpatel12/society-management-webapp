@@ -1,0 +1,29 @@
+.successful {
+  width: 400px;
+  max-width: 98%;
+  margin: auto;
+  padding: 20px 0px;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.successful h3 {
+  color: #0fba00;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+.successful img {
+  width: 60px;
+  height: 60px;
+}
+.successful button {
+  padding: 12px 0px;
+  width: 200px;
+  max-width: 70%;
+  margin: 30px 0px;
+  font-size: 16px;
+}

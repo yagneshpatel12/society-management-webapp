@@ -1,0 +1,49 @@
+.complaineWrapper p {
+  width: 800px;
+  max-width: 98%;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 500;
+}
+.complaineWrapper form {
+  width: 700px;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 5px;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+.complaineWrapper form input,
+.complaineWrapper form label,
+.complaineWrapper form textarea {
+  width: 80%;
+  display: inline-block;
+}
+.complaineWrapper form label {
+  margin: 15px auto;
+  margin-bottom: 5px;
+}
+.complaineWrapper button {
+  padding: 10px 0px;
+  width: 30%;
+  font-size: 15px;
+  margin: 15px auto;
+  font-weight: 500 !important;
+}
+@media only screen and (max-width: 600px) {
+  .complaineWrapper button {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .complaineWrapper form input,
+  .complaineWrapper form label,
+  .complaineWrapper form textarea {
+    width: 94%;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,154 @@
+.adminWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1400px;
+  max-width: 100%;
+  height: 100vh;
+  margin: auto;
+  transition: all 0.5s;
+}
+/* sidebar */
+.sidebarWrapper {
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 20%;
+  height: 100%;
+  background: white;
+  border-right: 1px solid rgb(233, 233, 233);
+}
+.sidebar {
+  padding: 0px 20px;
+}
+.sidebar::-webkit-scrollbar,
+.sidebarWrapper::-webkit-scrollbar {
+  width: 0px;
+}
+/* logo */
+.logoWrapperSidebar {
+  margin-left: 15px;
+}
+.line {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+/* admin details */
+.adminInfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 5px;
+}
+.adminInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.adminInfo p {
+  font-weight: 500;
+  margin-left: 15px;
+}
+.admin {
+  margin-top: 3px;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+}
+/* sidebar links */
+.sidebar ul {
+  margin-top: 15px;
+}
+.sidebar ul li {
+  padding: 13px 0;
+  padding-left: 15px;
+  border-radius: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  color: var(--primary-text);
+  font-weight: 500;
+  outline: none;
+}
+.sidebar ul li:hover {
+  background: rgba(169, 160, 255, 0.233);
+}
+.sidebar ul li i {
+  margin-right: 15px;
+  width: 20px;
+  text-align: center;
+}
+
+/* main section */
+.mainSectionWrapper {
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.mainSection {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.componentWrapper {
+  margin-top: 30px;
+}
+.logo {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+@media only screen and (max-width: 1150px) {
+  .sidebarWrapper {
+    width: 25%;
+  }
+  .mainSectionWrapper {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .navbar {
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+  .mainSectionWrapper {
+    width: 100%;
+  }
+  .sidebar {
+    width: 40%;
+    background: white;
+    overflow-y: scroll !important;
+    position: relative;
+    height: 100vh;
+  }
+  .sidebarWrapper {
+    width: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
+    background: rgba(0, 0, 0, 0.548);
+  }
+  .mobileSidebar {
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .sidebar {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .sidebar {
+    width: 75%;
+  }
+}

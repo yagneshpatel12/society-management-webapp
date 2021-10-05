@@ -1,0 +1,42 @@
+.cardWrapperrr {
+  border: 1px solid red;
+  background: rgb(243, 243, 243);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 250px;
+  max-width: 90%;
+  margin-bottom: 20px;
+  background: none;
+  font-size: 14px;
+}
+.btn span {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn span i {
+  animation: arrow 1s infinite linear;
+  width: 15px;
+}
+@keyframes arrow {
+  0% {
+    margin-left: 20px;
+  }
+  50% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .btn {
+    margin-left: 20px !important;
+  }
+}

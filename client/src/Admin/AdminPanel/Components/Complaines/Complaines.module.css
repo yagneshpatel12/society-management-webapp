@@ -1,0 +1,69 @@
+.complaineWrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .complaineWrapper {
+    height: 82vh;
+  }
+}
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  width: 330px;
+  max-width: 90%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+.cardHeader {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--input-border);
+}
+.cardHeader h3 {
+  color: var(--primary-text);
+  font-weight: 600;
+}
+.cardHeader div {
+  margin-top: 5px;
+}
+.cardEmail {
+  color: var(--primary-text);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cardEmail i {
+  justify-self: center;
+  font-size: 12px;
+  margin-top: 1px;
+  margin-right: 7px;
+}
+.cardDiscription {
+  margin-top: 10px;
+}
+.cardDiscription h3 {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+.cardDiscription p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--primary-text);
+}
+.deleteBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: red;
+  cursor: pointer;
+}

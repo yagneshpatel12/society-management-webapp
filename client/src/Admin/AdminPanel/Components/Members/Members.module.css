@@ -1,0 +1,14 @@
+.membersWrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .membersWrapper {
+    height: 82vh;
+  }
+}
+.membersWrapper h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}

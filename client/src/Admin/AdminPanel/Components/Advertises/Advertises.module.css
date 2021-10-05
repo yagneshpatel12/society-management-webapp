@@ -1,0 +1,36 @@
+.advertiseWrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .advertiseWrapper {
+    height: 82vh;
+  }
+}
+.advertiseWrapper h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+.cardWrapperMain {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cardWrapperMain i {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 2;
+}

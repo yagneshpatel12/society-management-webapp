@@ -1,0 +1,92 @@
+.eventCard {
+  display: flex;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  max-width: 90%;
+  margin: 10px auto;
+}
+.eventCardText {
+  width: 60%;
+}
+.eventCardText h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--primary-text);
+}
+.eventCardText .discription {
+  color: var(--secondary-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+.eventCardText div {
+  margin-top: 10px;
+}
+.eventCard div p i {
+  color: var(--secondary-color);
+  margin-right: 15px;
+  font-size: 14px;
+  width: 14px;
+  text-align: center;
+}
+.eventCardText div p {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.eventCardImg {
+  width: 35%;
+}
+.eventCardImg img {
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 550px) {
+  .eventCardText h3 {
+    font-size: 18px;
+  }
+  .eventCardText .discription {
+    font-size: 12px;
+  }
+  .eventCardText div p {
+    font-size: 12px;
+  }
+  .eventCardText div span img {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .eventCard {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .eventCardText {
+    width: 90%;
+    text-align: center;
+  }
+  .eventCardImg {
+    width: 150px;
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .eventCardText div {
+    margin-top: 15px !important;
+    width: 100%;
+    text-align: start;
+    margin: auto;
+    margin-left: 10px;
+  }
+}

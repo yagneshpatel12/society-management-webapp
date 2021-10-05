@@ -1,0 +1,27 @@
+.swiper-pagination {
+  bottom: 0px !important;
+}
+.swiper-container {
+  padding-bottom: 15px !important;
+}
+.swiper-pagination-bullet {
+  width: 9px !important;
+  height: 9px !important;
+  background: var(--main-color) !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--main-color) !important;
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.event-swiper {
+  width: 550px !important;
+  max-width: 90% !important;
+}
+.advertise-swiper {
+  width: 360px !important;
+  max-width: 90% !important;
+}

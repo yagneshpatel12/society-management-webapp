@@ -1,0 +1,57 @@
+.contactWrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .contactWrapper {
+    height: 82vh;
+  }
+}
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  width: 330px;
+  max-width: 90%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+.card h3 {
+  color: var(--primary-text);
+  font-weight: 600;
+}
+.cardEmail {
+  color: var(--primary-text);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--input-border);
+}
+.cardEmail i {
+  justify-self: center;
+  font-size: 12px;
+  margin-top: 1px;
+  margin-right: 7px;
+}
+.cardMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0px;
+}
+.deleteBtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: red;
+  cursor: pointer;
+}

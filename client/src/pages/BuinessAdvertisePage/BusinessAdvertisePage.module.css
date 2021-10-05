@@ -1,0 +1,48 @@
+.searchbar {
+  background: var(--white);
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  width: 450px;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 30px;
+}
+.searchbar input {
+  padding: 12px 0px;
+  width: 400px;
+  max-width: 70%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.searchbar .btn i {
+  font-size: 14px;
+}
+.searchbar .btn {
+  padding: 12px 0px;
+  width: 100px;
+  max-width: 70%;
+  border-radius: 35px;
+  font-size: 16px;
+  margin-bottom: 1px;
+  margin-right: 3px;
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 500px) {
+  .searchbar input,
+  .searchbar .btn {
+    padding: 10px 0;
+  }
+  .cardList {
+    margin-top: 25px;
+  }
+}

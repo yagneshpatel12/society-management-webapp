@@ -19,9 +19,11 @@ import { Home,Navbar,Contact,BusinessAdvertisePage,GalleryPage,LoginPage,Registe
       duration: 800,
     });
   }, []);
-  if(isAdmin){
-    document.body.style.overflowY='hidden !important'
-  }
+   useEffect(()=>{
+    if(isAdmin){
+      document.body.style.overflowY='hidden !important'
+    }
+  },[isAdmin])
   return loading ?  <Loader message="Loading, please wait.." />
     : isAdmin ? 
     // Admin  routes

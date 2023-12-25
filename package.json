@@ -17,7 +17,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "render-build": "npm install --prefix client && npm run build --prefix client"
   },
   "author": "yagnesh patel",
   "license": "ISC"
